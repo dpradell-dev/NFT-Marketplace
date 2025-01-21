@@ -9,7 +9,6 @@ import balanceReducer from "./balanceSlice";
 import adminReducer from "./adminSlice";
 import userReducer from "./userSlice";
 import usersReducer from "./usersSlice";
-import walletReducer from "./walletSlice";
 
 const persistConfig = {
     key: "root",
@@ -26,7 +25,6 @@ const reducer = persistReducer(
         balance: balanceReducer,
         user: userReducer,
         users: usersReducer,
-        wallet: walletReducer,
     })
 );
 
